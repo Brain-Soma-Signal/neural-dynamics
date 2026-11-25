@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soma-signal-neural-dynamics"
+version = "0.1.0"
+description = "Stateful PyTorch projections and dendritic controllers"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.8,<3"]
+
+[project.optional-dependencies]
+test = ["numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
